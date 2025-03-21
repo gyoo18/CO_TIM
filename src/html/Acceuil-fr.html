@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>CO Tec Intégration Multimédia - Acceuil</title>
+        <style>
+            .bouton_programme{
+                margin-bottom: 2em;
+                padding: 0;
+                padding-bottom: -1em;
+                max-width: max-content;
+                max-height: max-content;
+                object-fit: cover;
+                background-color: #0000;
+                border-width: 0;
+                width: 35em;
+                border-radius: 0;
+
+                box-shadow: 2em 2em rgb(82, 177, 231);
+                top: 2em;
+            }
+
+            @keyframes bouton_programme_hover {
+                from{
+                    background-position: 100%;
+                    box-shadow: 2em 2em rgb(82, 177, 231);
+                    top: 2em;
+                    width: 35em;
+                    border-radius: 0;
+                }
+                to{
+                    background-position: 0%;
+                    box-shadow: 0.5em 0.5em rgb(82, 177, 231);
+                    top: 0;
+                    width: 37em;
+                    border-radius: 5em;
+                }
+            }
+
+            .bouton_programme:hover{
+                cursor: pointer;
+                box-shadow: 0.5em 0.5em rgb(82, 177, 231);
+                top: 0;
+                width: 37em;
+                border-radius: 5em;
+                animation: bouton_programme_hover 0.5s ease-out 0s 1;
+                -webkit-animation: bouton_programme_hover 0.5s ease-out 0s 1;
+            }
+
+            .bouton_programme_image{
+                max-width: 100%; 
+                max-height: 100%; 
+                background-color: #0000;
+                border-radius: 0;
+                vertical-align: bottom;
+            }
+
+            @keyframes bouton_programme_image_hover {
+                from {
+                    border-radius: 0;
+                }
+
+                to {
+                    border-radius: 5em;
+                }
+            }
+
+            .bouton_programme_image:hover{
+                border-radius: 5em;
+                animation: bouton_programme_image_hover 0.5s ease-out 0s 1;
+            }
+        </style>
+        <link rel="stylesheet" href="../css/theme1.css">
+    </head>
+    <body>
+        <header>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:15em"><img src="../../res/images/112595fd.png" style="max-width: 100%; max-height: 100%;"></a>
+                <div class="header_gauche">
+                    <button class="header_bouton" onclick="window.location.href='';">Acceuil</button>
+                    <button class="header_bouton" onclick="window.location.href='';">FAQ</button>
+                    <button class="header_bouton" onclick="window.location.href='';">Nous joindre</button>
+                </div>
+            </div>
+        </header>
+        <div style="position: sticky; top: 0; z-index: 960;">
+            <div class="header_navbar">
+                <a href="https://cegepoutaouais.qc.ca/" style="width: 5em"><img src="../../res/images/112595fd.png" style="max-width: 100%; max-height: 100%;"></a>
+            </div>
+            <div style="background-color: rgb(35, 18, 128); height: 0.4em; width: 100%"></div>
+        </div>
+        <main style="margin-left:12.5%;margin-right:12.5%">
+            <div class="bloc_cadre">
+                <h1 style="z-index: 980;">C'est quoi un DEC en intégration multimédia?</h1>
+                <div class="bloc_contenu">
+                    <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; flex-shrink: 1; flex-basis: 50%; ">
+                        <p>
+                            C’est <em>3 ans</em> d’apprentissages en travaillant sur des projets concrets avec 
+                            plus de 30 logiciels. Effectuer un <em>stage</em>, poursuivre vos études à 
+                            <em>l’université</em> ou obtenir un <em>emploi</em> dans différentes entreprises 
+                            de multimédia ou dans la fonction publique fédérale.
+                        </p>
+                        <button class="main_bouton">En savoir plus</button>
+                    </div>
+                    <div style="width: 50%; max-width: 35em;">
+                        <video controls>
+                            <source src="../../res/video/video_et_logo_modif.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc_cadre">
+                <h1>Étudiant d'un jour</h1>
+                <div class="bloc_contenu">
+                    <div style="width: 50%; max-width: 35em;">
+                        <img src="../../res/images/etudiant_un_jour.png" class="img_c">
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; flex-shrink: 1; flex-basis: 50%; ">
+                        <p>
+                            Viens passer une journée au Cégep dans nos classes en multimédia. C’est l’occasion de voir si notre programme est fait pour toi !
+                            Participer à l’expérience étudiante ou étudiant d’un jour&nbsp:</p>
+                            <ul>
+                                <li>C’est passer une demi-journée dans un ou deux cours du programme de votre choix en compagnie des étudiantes et étudiants du Cégep;</li>
+                                <li>Vous permet de vivre le Cégep comme un vrai étudiant ou une vraie étudiante;</li>
+                                <li>Permets de découvrir votre futur milieu d’études en pleine action.</li>
+                            </ul>
+                        <p>
+                            Faites comme près de la moitié de nos nouveaux admis qui ont participé à l’activité Étudiante ou étudiant d’un jour et inscrivez-vous dès maintenant !<br>
+                            <br>
+                            Remplis le formulaire pour t’inscrire pour devenir étudiant.e d’un jour.
+                        </p>
+                        <button class="main_bouton" onclick="window.location.href='https://cegepoutaouais.qc.ca/futurs-etudiants/etudiant-un-jour/'">En savoir plus</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc_cadre">
+                <h1>Emploi d'été</h1>
+                <div class="bloc_contenu">
+                    <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; flex-shrink: 1; flex-basis: 50%; ">
+                        <p>
+                            Plusieurs de nos étudiants obtiennent un emploi d’été au gouvernement fédéral dès la première année d’études en Multimédia. Dans le cadre du cours Environnement Professionnel à la première session, un expert du gouvernement fédéral est invité dans la classe afin d’aider les étudiants à s’inscrire au programme d’emplois.
+                            Allez acquérir une expérience précieuse et enrichissante en travaillant pour un des plus importants employeurs d’étudiants au Canada. Découvrez les centaines de carrières et les milliers d’emplois offerts par le gouvernement du Canada dans tout le pays.
+                            <b>Assurez-vous de vous inscrire avant février afin d’obtenir les meilleures chances d’emplois !</b>
+                        </p>
+                        <button class="main_bouton" onclick="window.location.href='https://www.canada.ca/fr/commission-fonction-publique/emplois/services/recrutement/etudiants/programme-federal-experience-travail-etudiant.html'">Plus d’information ici</button>
+                    </div>
+                    <div style="width: 50%; max-width: 35em;">
+                        <img src="../../res/images/emploi_ete.png" class="img_c">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc_cadre">
+                <h1>Les stages</h1>
+                <div class="bloc_contenu">
+                    <div style="width: 50%; max-width: 35em;">
+                        <img src="../../res/images/stages.png" class="img_c">
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; flex-shrink: 1; flex-basis: 50%; ">
+                        <p>
+                            Nous avons la chance de pouvoir compter sur un grand éventail de partenaires de stage depuis plus de 20 ans !
+                            Nos stages rémunérés de 4 mois permettent à nos étudiants de réellement s’intégrer dans un milieu professionnel. La plupart du temps, les stages se transforment en emplois permanents. Pour plusieurs, c’est le début d’une carrière trépidante en multimédia. Pour d’autres, c’est une expérience supplémentaire avant d’accéder à l’université.
+                            Tous les stages se déroulent ici en Outaouais, mais également partout au Québec, selon les aspirations des étudiants.
+                        </p>
+                    </div>
+                </div>
+                <h2>Voici la liste officielle de nos milieux de stage pour l’année 2024</h2>
+                <div style="display: flex; justify-content: center;">
+                    <table>
+                        <tr>
+                            <td>OPIC</td> <td>Environnement et Changement climatique Canada.</td>
+                        </tr>
+                        <tr>
+                            <td>Samson<br><a href="https://www.samson.ca/fr">En savoir plus</a></td> <td>Justice canada.</td>
+                        </tr>
+                        <tr>
+                            <td>STO</td> <td>Affaires Mondiales Canada.</td>
+                        </tr>
+                        <tr>
+                            <td>Gendarmerie royale du Canada</td> <td>Service Canada.</td>
+                        </tr>
+                        <tr>
+                            <td>Centre de la Sécurité des Télécommunications.</td> <td>École de la fonction publique du Canada / Gouvernement du Canada.</td>
+                        </tr>
+                        <tr>
+                            <td>Conseil de la radiodiffusion et des télécommunications canadiennes| (CRTC).</td> <td>Conseil de recherches en sciences humaines du Canada – Gouvernement du Canada.</td>
+                        </tr>
+                        <tr>
+                            <td>Conseil de recherches en sciences naturelles et en génie du Canada – Gouvernement du Canada</td> <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="bloc_cadre">
+                <h1>UQAT</h1>
+                <div class="bloc_contenu">
+                    <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; flex-shrink: 1; flex-basis: 50%; ">
+                        <p>
+                            Poursuivre ses études à l’université en jeux vidéo, c’est possible ! Nous avons eu la chance de 
+                            rencontrer Natalie Bogros et <a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEHcBdCEDf_zgAAAZW1y6y43GUOI8gBbl4NyZ28jsPy1Ykv3lQfIVm0jsmhRndOoYGeHOc_R54a7g9GxKb2A9fZJ9_xtd8LL7hFgfVcDW_SipQE1YMdGo2WOnlm0A4k_-QH1is=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcomm%2Fin%2Falexandre-seguin-uqat%3Ftrk%3Deml-msg_digest-body-view_profile%26midToken%3DAQFjw_jOyWVoHQ%26midSig%3D3-rEab8X-UnGw1%26trkEmail%3Deml-email_member_message_v2-null-4-null-null-1oq78f~lal3e6kr~yk-null-neptune%252Fprofile~vanity.view%26lipi%3Durn%253Ali%253Apage%253Aemail_email_member_message_v2%253BO7RkXM7YT2uQRndZxCFbvw%253D%253D">
+                            Alexandre Séguin</a> un de nos diplômés en TIM et qui est concepteur de niveau / finissant au BAC en création de jeux vidéo (Université du Québec en Abitibi-Témiscamingue).
+                        </p>
+                        <button class="main_bouton" onclick="window.location.href='https://www.uqat.ca/etudes/creation-et-nouveaux-medias/baccalaureat-en-creation-de-jeux-video/'">UQAT</button>
+                    </div>
+                    <div style="width: 50%; max-width: 35em;">
+                        <img src="../../res/images/uqat.png" class="img_c" style="border-radius: 3em;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc_cadre">
+                <h1>Bourses</h1>
+                <div class="bloc_contenu">
+                    <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; flex-shrink: 1; flex-basis: 50%; ">
+                        <h2>BOURSES PERSPECTIVE QUÉBEC</h2>
+                        <div style="width: 50%; max-width: 35em;">
+                            <img src="../../res/images/1500.png" class="img_c">
+                        </div>
+                        <p>
+                            Tu souhaites t’inscrire au Cégep de l’Outaouais ou tu fais déjà partie de la communauté étudiante?
+                            Le programme technique d’intégration multimédia pourrait te faire bénéficier d’une bourse très intéressante. En effet, ce programme d’étude a été visé pour augmenter 
+                            la main-d’œuvre dans des domaines d’emploi précis.<br>
+                            Tu recevras 1500 $ par session à temps plein réussie. Au bout de ton parcours académique, après ta diplomation, c’est un total de 9 000 $ que tu auras touché!
+                        </p>
+                        <button class="main_bouton" onclick="window.location.href='https://www.quebec.ca/education/aide-financiere-aux-etudes/bourses-perspective'">En savoir plus</button>
+                        <p>
+                            Venez étudier en multimédia et recevez 1500 $ de bourses après chaque session d’études réussie.<br>
+                            <br>
+                            Les bourses Perspective Québec sont offertes aux étudiantes et étudiants qui réussissent leur session à temps plein dans les programmes d’études collégiales et universitaires 
+                            admissibles. Elles visent à augmenter le nombre de personnes qualifiées dans des services publics essentiels ou dans des domaines stratégiques pour l’économie où il y a une 
+                            rareté de main-d’œuvre.<br>
+                            Les bourses seront attribuées après chaque session d’études réussie, à partir de la session d’automne 2022.<br>
+                            <br>
+                            Votre session d’études est considérée comme réussie si vous avez obtenu le nombre minimal d’heures ou de crédits requis selon le programme de bourses. Par conséquent, si vous 
+                            avez échoué à l’un de vos cours, mais que vous avez atteint ce nombre minimal, vous aurez droit à la bourse.
+                            Les bourses Perspective Québec peuvent être cumulées avec les <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/bourses-parcours-mobilite-etudiante">bourses Parcours</a> 
+                            et le <a href="https://www.quebec.ca/education/aide-financiere-aux-etudes/prets-bourses-temps-plein">Programme de prêts et bourses pour études à temps plein</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bloc_cadre">
+                <h1>Le programme</h1>
+                <div class="bloc_contenu">
+                    <div style="display: flex; flex-direction: column; align-items: center; flex-grow: 1; flex-shrink: 1; flex-basis: 50%; ">
+                        <h2>Pour plus d’information sur notre programme d’étude en Multimédia :</h2>
+                        <button class="bouton_programme" onclick="window.location.href='https://cegepoutaouais.qc.ca/programmes/programmes-techniques/sciences-technologie-et-environnement/integration-multimedia/'">
+                            <img src="../../res/images/programmeTIM.png" class="bouton_programme_image">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+    <div class="background-image"></div>
+    <div style="z-index: 910; position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: #CCCA; background-attachment: fixed; background-size: 100% 100%;"></div>
+    <div style="z-index: 920; position: fixed; top: 0; bottom: 0; left: 12.5%; right: 0; background-color:#EEEE; width: 75%"></div>
+</html>

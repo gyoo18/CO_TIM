@@ -1,0 +1,193 @@
+html, body{
+    padding:0;
+    margin: 0;
+}
+
+* {
+    z-index: 950;
+    position: relative;
+}
+
+.background-image{
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../res/images/programmeTIM.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+    background-position: center center;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+}
+
+h1, h2{
+    text-align: center;
+}
+
+em {
+    font-weight: bold;
+}
+
+header{
+    background-color: rgb(111, 199, 140);
+    box-shadow: 0 0.1em 1em #00000088;
+}
+
+.header_contenu{
+    padding: 3em; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_gauche{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-end; 
+    flex-grow: 1; 
+    flex-shrink: 1; 
+    flex-basis: auto;
+}
+
+.header_bouton{
+    font-size: 1.5em;
+    height: min-content;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 0.25em;
+    background-color: #0000;
+    border-width: 0;
+    cursor: default;
+}
+
+.header_navbar{
+    padding-left: 3em;
+    padding-right: 3em; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(111, 199, 140);
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+@keyframes header_bouton_hover{
+    from {
+        box-shadow: 0em 0em rgb(82, 177, 231);
+    }
+    to {
+        box-shadow: 0em 0.5em rgb(82, 177, 231);
+    }
+}
+
+.header_bouton:hover{
+    cursor: pointer;
+    box-shadow: 0em 0.5em rgb(82, 177, 231);
+    animation-name : header_bouton_hover;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+}
+
+main{
+    padding : 3em;
+}
+
+.bloc_cadre{
+    padding: 2em;
+    margin-bottom:5em;
+    border: 2px solid #0001;
+    box-shadow: 1em 1em 10em #0001;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.bloc_contenu{
+    display: flex;
+    flex-direction: row;
+}
+
+video, .img_c{
+    box-shadow: 1em 1em rgb(82, 177, 231);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main_bouton{
+    font-size: 1.7em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(51, 107, 190);
+    font-weight: bold;
+    padding: 0.5em;
+    max-width: max-content;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    object-fit: cover;
+    background-color: #0000;
+    background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
+    background-size: 200%;
+    background-position: 100%;
+    
+    border: 0.4em solid rgb(82, 177, 231);
+    box-shadow: 0.5em 0.5em #0000001e;
+}
+
+@keyframes main_bouton_hover {
+    from{
+        background-position: 100%;
+        padding: 0.5em;
+        box-shadow: 0.5em 0.5em #0000001e;
+    }
+    to{
+        background-position: 0%;
+        padding: 0.55em;
+        box-shadow: 0.2em 0.2em #0000001e;
+    }
+}
+
+.main_bouton:hover{
+    cursor: pointer;
+    background-position: 0%;
+    padding: 0.55em;
+    box-shadow: 0.2em 0.2em #0000001e;
+    animation: main_bouton_hover 0.5s ease-out 0s 1;
+    -webkit-animation: main_bouton_hover 0.5s ease-out 0s 1;
+}
+
+p, li{
+    text-align: justify; 
+    margin: 1em; 
+    font-size: 1.25em;
+}
+
+table{
+    padding:0;
+    margin: 0;
+    border-collapse: collapse;
+    width: 75%;
+    box-shadow: 1em 1em #4583c971;
+}
+
+td{
+    padding: 1em;
+    border: 1px solid rgb(82, 177, 231);
+    margin: 0;
+    text-align: center;
+    background-color: #0000;
+    font-weight: bold;
+}
+
+td:hover{
+    background-color: #DDDD;
+}
