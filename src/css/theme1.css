@@ -1,6 +1,7 @@
 html, body{
     padding:0;
     margin: 0;
+    scroll-snap-type: y mandatory;
 }
 
 * {
@@ -24,8 +25,12 @@ html, body{
     -webkit-filter: blur(10px);
 }
 
-h1, h2{
+h1, h2, h3{
     text-align: center;
+}
+
+h1{
+    scroll-margin-top: 5em;
 }
 
 em {
@@ -33,12 +38,18 @@ em {
 }
 
 header{
+    z-index: 960;
     background-color: rgb(111, 199, 140);
     box-shadow: 0 0.1em 1em #00000088;
+    position: sticky;
+    top: 0;
 }
 
 .header_contenu{
-    padding: 3em; 
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    padding-bottom: 1em; 
     display: flex; 
     flex-direction: row;
     align-items: center;
@@ -54,27 +65,17 @@ header{
 }
 
 .header_bouton{
-    font-size: 1.5em;
+    font-size: 1.2em;
     height: min-content;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    margin: 0.25em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
     background-color: #0000;
     border-width: 0;
     cursor: default;
-}
-
-.header_navbar{
-    padding-left: 3em;
-    padding-right: 3em; 
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background-color: rgb(111, 199, 140);
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
 }
 
 @keyframes header_bouton_hover{
@@ -92,6 +93,56 @@ header{
     animation-name : header_bouton_hover;
     animation-duration: 100ms;
     animation-iteration-count: 1;
+}
+
+.header_navbar{
+    padding-left: 3em;
+    padding-right: 3em; 
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: rgb(111, 199, 140);
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu_bouton{
+    font-size: 1em;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(51, 107, 190);
+    font-weight: bold;
+    padding: 0.5em;
+    margin:0.2em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    object-fit: cover;
+    background-color: #0000;
+    background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
+    background-size: 200%;
+    background-position: 100%;
+    border: 0.2em solid rgb(82, 177, 231);
+}
+
+@keyframes menu_bouton_hover {
+    from{
+        background-position: 100%;
+        padding: 0.5em;
+    }
+    to{
+        background-position: 0%;
+        padding: 0.55em;
+    }
+}
+
+.menu_bouton:hover{
+    cursor: pointer;
+    background-position: 0%;
+    padding: 0.55em;
+    animation: menu_bouton_hover 0.5s ease-out 0s 1;
+    -webkit-animation: menu_bouton_hover 0.5s ease-out 0s 1;
 }
 
 main{
