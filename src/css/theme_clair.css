@@ -1,0 +1,106 @@
+.background_couleur_base{
+    background-color: #CCCA;
+}
+
+header{
+    background-color: rgb(111, 199, 140);
+    box-shadow: 0 0.1em 1em #00000088;
+}
+
+.header_bouton{
+    background-color: #0000;
+}
+
+@keyframes header_bouton_hover{
+    from {
+        background-position: 100%;
+        padding: 0.5em;
+        box-shadow: 0em 0em rgb(82, 177, 231);
+    }
+    to {
+        background-position: 0%;
+        padding: 0.55em;
+        box-shadow: 0em 0.5em rgb(82, 177, 231);
+    }
+}
+
+.header_bouton:hover{
+    box-shadow: 0em 0.5em rgb(82, 177, 231);
+    animation: main_bouton_hover 0.5s ease-out 0s 1;
+    -webkit-animation: main_bouton_hover 0.5s ease-out 0s 1;
+}
+
+.header_navbar{
+    background-color: rgb(111, 199, 140);
+}
+
+.header_séparateur{
+    background-color: rgb(35, 18, 128); 
+}
+
+.bouton_haut{
+    color: white;
+    background-color: rgb(82, 177, 231);
+    box-shadow: 0 0 1em #0003;
+}
+
+.bouton_haut:hover{
+    background-color: rgb(51, 107, 190);
+}
+
+.menu_cadre{
+    background-color: rgb(238, 238, 238); 
+    border: 1px solid #afafaf; 
+    box-shadow: 0 0 2em #0002;
+}
+
+.menu_bouton{
+    color: rgb(51, 107, 190);
+    background-color: #0000;
+    background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
+    border: 0.2em solid rgb(82, 177, 231);
+}
+
+.bloc_cadre{
+    border: 2px solid #0001;
+    box-shadow: 1em 1em 10em #0001;
+}
+
+video, .img_c{
+    box-shadow: 1em 1em rgb(82, 177, 231);
+}
+
+.main_bouton{
+    color: rgb(51, 107, 190);
+    background-color: #0000;
+    background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
+    
+    border: 0.4em solid rgb(82, 177, 231);
+    box-shadow: 0.5em 0.5em #0000001e;
+}
+
+@keyframes main_bouton_hover {
+    from{
+        box-shadow: 0.5em 0.5em #0000001e;
+    }
+    to{
+        box-shadow: 0.2em 0.2em #0000001e;
+    }
+}
+
+.main_bouton:hover{
+    box-shadow: 0.2em 0.2em #0000001e;
+}
+
+table{
+    box-shadow: 1em 1em #4583c971;
+}
+
+td{
+    border: 1px solid rgb(82, 177, 231);
+    background-color: #0000;
+}
+
+td:hover{
+    background-color: #DDDD;
+}

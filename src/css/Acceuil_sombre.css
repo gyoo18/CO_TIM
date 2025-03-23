@@ -1,0 +1,101 @@
+html{
+    background-color: #000;
+}
+
+.background-image{
+    background-image: url('../../res/images/programmeTIM.png');
+}
+
+.bouton_programme{
+    margin-bottom: 2em;
+    padding: 0;
+    padding-bottom: -1em;
+    max-width: max-content;
+    max-height: max-content;
+    object-fit: cover;
+    background-color: #0000;
+    border-width: 0;
+    width: 35em;
+    border-radius: 0;
+
+    box-shadow: 2em 2em rgb(82, 177, 231);
+    top: 2em;
+}
+
+@keyframes bouton_programme_hover {
+    from{
+        background-position: 100%;
+        box-shadow: 2em 2em rgb(82, 177, 231);
+        top: 2em;
+        width: 35em;
+        border-radius: 0;
+    }
+    to{
+        background-position: 0%;
+        box-shadow: 0.5em 0.5em rgb(82, 177, 231);
+        top: 0;
+        width: 37em;
+        border-radius: 5em;
+    }
+}
+
+.bouton_programme:hover{
+    cursor: pointer;
+    box-shadow: 0.5em 0.5em rgb(82, 177, 231);
+    top: 0;
+    width: 37em;
+    border-radius: 5em;
+    animation: bouton_programme_hover 0.5s ease-out 0s 1;
+    -webkit-animation: bouton_programme_hover 0.5s ease-out 0s 1;
+}
+
+.bouton_programme_image{
+    max-width: 100%; 
+    max-height: 100%; 
+    background-color: #0000;
+    border-radius: 0;
+    vertical-align: bottom;
+}
+
+@keyframes bouton_programme_image_hover {
+    from {
+        border-radius: 0;
+    }
+
+    to {
+        border-radius: 5em;
+    }
+}
+
+.bouton_programme_image:hover{
+    border-radius: 5em;
+    animation: bouton_programme_image_hover 0.5s ease-out 0s 1;
+}
+
+.section_diplômés{
+    display: flex; 
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.fiche_diplômé{
+    margin: 1em; 
+    padding: 1em; 
+    width: 25em; 
+    border: 2px solid #0001; 
+    border-radius: 1em; 
+    box-shadow: 0 0 1em rgba(79, 111, 146, 0.247);
+}
+
+.cadre_description_diplômé{
+    overflow-y: scroll; 
+    height: 30em; border: 
+    1px solid #0003; 
+    border-radius: 1em; 
+    box-shadow: 0 0 0;
+    background-color: #FFF1;
+}
+
+.section_diplômés p{
+    font-size: 1em;
+}

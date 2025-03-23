@@ -1,0 +1,113 @@
+p, li, h1, h2, h3, td{
+    color:rgb(144, 190, 216)
+}
+
+.background_couleur_base{
+    background-color: rgba(44, 44, 44, 0.667); 
+}
+
+header{
+    background-color: rgb(39, 82, 53);
+    box-shadow: 0 0.1em 1em #00000088;
+}
+
+.header_bouton{
+    background-color: #0000;
+    color:white;
+}
+
+@keyframes header_bouton_hover{
+    from {
+        box-shadow: 0em 0em rgb(82, 177, 231);
+    }
+    to {
+        box-shadow: 0em 0.5em rgb(82, 177, 231);
+    }
+}
+
+.header_bouton:hover{
+    box-shadow: 0em 0.5em rgb(82, 177, 231);
+}
+
+.header_navbar{
+    background-color: rgb(111, 199, 140);
+}
+
+.header_séparateur{
+    background-color: rgb(22, 20, 37); 
+}
+
+.bouton_haut{
+    color: white;
+    background-color: rgb(51, 107, 190);
+    box-shadow: 0 0 1em #0003;
+}
+
+.bouton_haut:hover{
+    background-color: rgb(82, 177, 231);
+}
+
+main{
+    background-color: rgb(39, 39, 39);
+}
+
+.menu_cadre{
+    background-color: rgb(39, 39, 39); 
+    border: 1px solid #181818; 
+    box-shadow: 0 0 2em #0002;
+}
+
+.menu_bouton{
+    color: rgb(82, 177, 231);
+    background-color: #0000;
+    background-image: linear-gradient(to right,rgb(51,107,190) 50%, #0000 50%);
+    border: 0.2em solid rgb(30, 72, 134);
+}
+
+.bloc_cadre{
+    border: 2px solid #0001;
+    box-shadow: 1em 1em 10em #FFF1;
+}
+
+video, .img_c{
+    box-shadow: 1em 1em rgb(51, 107, 190);
+}
+
+.main_bouton{
+    color: rgb(82, 177, 231);
+    background-color: #0000;
+    background-image: linear-gradient(to right,rgb(51,107,190) 50%, #0000 50%);
+    
+    border: 0.4em solid rgb(30, 72, 134);
+    box-shadow: 0.5em 0.5em rgb(51,107,190);
+}
+
+@keyframes main_bouton_hover {
+    from{
+        background-position: 100%;
+        padding: 0.5em;
+        box-shadow: 0.5em 0.5em rgb(51,107,190);
+    }
+    to{
+        background-position: 0%;
+        padding: 0.55em;
+        box-shadow: 0.2em 0.2em rgb(51,107,190);
+    }
+}
+
+.main_bouton:hover{
+    box-shadow: 0.2em 0.2em rgb(51,107,190);
+}
+
+table{
+    box-shadow: 1em 1em #4583c971;
+}
+
+td{
+    border: 1px solid rgb(82, 177, 231);
+    background-color: #0000;
+}
+
+td:hover{
+    background-color: rgb(63, 63, 63);
+}
