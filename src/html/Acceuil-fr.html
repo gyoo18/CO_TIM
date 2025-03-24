@@ -5,18 +5,31 @@
         <meta charset="utf-8">
         <title>CO Tec Intégration Multimédia - Acceuil</title>
         <link rel="stylesheet" href="../css/style_base.css">
-        <link rel="stylesheet" href="../css/theme_sombre.css">
-        <link rel="stylesheet" href="../css/Acceuil_sombre.css">
+        <link rel="stylesheet" href="../css/theme_clair.css">
+        <link rel="stylesheet" href="../css/Acceuil_clair.css">
+        <script src="../javascript/changement_theme.js"></script>
     </head>
     <body>
         <header>
             <div class="header_contenu">
-                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_sombre.svg"></a>
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
                 <div class="header_gauche">
-                    <button class="header_bouton" onclick="window.location.href='';">Acceuil</button>
+                    <button class="header_bouton" onclick="window.location.href='https://cegepoutaouais.qc.ca/accueil-2/';">Acceuil</button>
                     <button class="header_bouton" onclick="window.location.href='';">FAQ</button>
                     <button class="header_bouton" onclick="window.location.href='';">Nous joindre</button>
+                    <button class="header_bouton" onclick="changer_theme();">Theme</button>
                 </div>
+            </div>
+            <div class="header_navbar">
+                <p>Plan du site:</p>
+                <a class="header_navbar_bouton" href="#1">DEC TIM</a>
+                <a class="header_navbar_bouton" href="#2">Étudiant d'un jour</a>
+                <a class="header_navbar_bouton" href="#3">Emploi d'été</a>
+                <a class="header_navbar_bouton" href="#4">Les stages</a>
+                <a class="header_navbar_bouton" href="#5">UQAT</a>
+                <a class="header_navbar_bouton" href="#6">Bourses</a>
+                <a class="header_navbar_bouton" href="#7">Le programme</a>
+                <a class="header_navbar_bouton" href="#8">Nos diplômés</a>
             </div>
             <div class="header_séparateur"></div>
         </header>
@@ -51,7 +64,7 @@
                                 <em>l’université</em> ou obtenir un <em>emploi</em> dans différentes entreprises 
                                 de multimédia ou dans la fonction publique fédérale.
                             </p>
-                            <button class="main_bouton">En savoir plus</button>
+                            <button class="main_bouton" onclick="window.location.href='https://cegepoutaouais.qc.ca/programmes/programmes-techniques/sciences-technologie-et-environnement/integration-multimedia/'">En savoir plus</button>
                         </div>
                         <div class="contenu_média">
                             <video controls autoplay muted>
@@ -220,9 +233,9 @@
                             <h2>Annie Sophie</h2>
                             <div style="width: 25em;"><img src="../../res/images/annesophie.webp" style="border-radius: 50%;"></div>
                             <p>
-                                Obtention DEC en multimédia :<br>
+                                <b>Obtention DEC en multimédia :</b><br>
                                 &emsp;Mai 2019<br>
-                                Lieu de stage :<br>
+                                <b>Lieu de stage :</b><br>
                                 &emsp;École de la fonction publique du Canada
                             </p>
                             <div class="cadre_description_diplômé">
@@ -260,9 +273,9 @@
                             <h2>Julien</h2>
                             <div style="width: 25em;"><img src="../../res/images/julien.webp" style="border-radius: 50%;"></div>
                             <p>
-                                Obtention DEC en multimédia :<br>
+                                <b>Obtention DEC en multimédia :</b><br>
                                 &emsp;En 2003<br>
-                                Lieu de stage :<br>
+                                <b>Lieu de stage :</b><br>
                                 &emsp;Petite boite de multimédia dans le vieux Hull qui n’existe plus présentement
                             </p>
                             <div class="cadre_description_diplômé">
@@ -294,9 +307,9 @@
                             <h2>Axel</h2>
                             <div style="width: 25em;"><img src="../../res/images/axel.webp" style="border-radius: 50%;"></div>
                             <p>
-                                Obtention DEC en multimédia :<br>
+                                <b>Obtention DEC en multimédia :</b><br>
                                 &emsp;En 2004<br>
-                                Lieu de stage :<br>
+                                <b>Lieu de stage :</b><br>
                                 &emsp;Axial Développement, au bureau de Gatineau (aujourd’hui nommé Axial)
                             </p>
                             <div class="cadre_description_diplômé">
@@ -333,9 +346,9 @@
                             <h2>Maxime</h2>
                             <div style="width: 25em;"><img src="../../res/images/maxime.webp" style="border-radius: 50%;"></div>
                             <p>
-                                Obtention DEC en multimédia :<br>
+                                <b>Obtention DEC en multimédia :</b><br>
                                 &emsp;En 2015<br>
-                                Lieu de stage :<br>
+                                <b>Lieu de stage :</b><br>
                                 &emsp;Département des communications du Cégep de l’Outaouais
                             </p>
                             <div class="cadre_description_diplômé">
@@ -361,8 +374,16 @@
 
         <footer>
             <div class="header_séparateur"></div>
-            <div>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
+                <p>©Vincent Godbout 2025</p>
+                <a href="#1">Haut</a>
+                <a href="https://cegepoutaouais.qc.ca/accueil-2/">Acceuil</a>
 
+                <div class="header_gauche">
+                    <a href="https://www.facebook.com/cegep.outaouais/" class="icône"><img src="../../res/icônes/facebook_clair.png"></a>
+                    <a href="https://www.instagram.com/cegepoutaouais/" class="icône"><img src="../../res/icônes/instagram_clair.png"></a>
+                </div>
             </div>
         </footer>
     </body>

@@ -2,6 +2,18 @@ p, li, h1, h2, h3, td{
     color:rgb(144, 190, 216)
 }
 
+a{
+    color:#DDD;
+}
+
+a:hover{
+    color:#89dfcc;
+}
+
+a:visited{
+    color: rgb(51, 107, 190);
+}
+
 .background_couleur_base{
     background-color: rgba(44, 44, 44, 0.667); 
 }
@@ -9,6 +21,10 @@ p, li, h1, h2, h3, td{
 header{
     background-color: rgb(39, 82, 53);
     box-shadow: 0 0.1em 1em #00000088;
+}
+
+footer{
+    background-color: rgb(39, 82, 53);
 }
 
 .header_bouton{
@@ -110,4 +126,21 @@ td{
 
 td:hover{
     background-color: rgb(63, 63, 63);
+}
+
+footer a, footer p{
+    margin: 1em;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer a:hover{
+    color:#89dfcc;
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color:#AAA;
+    text-decoration: underline;
 }

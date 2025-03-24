@@ -7,6 +7,10 @@ header{
     box-shadow: 0 0.1em 1em #00000088;
 }
 
+footer{
+    background-color: rgb(111, 199, 140);
+}
+
 .header_bouton{
     background-color: #0000;
 }
@@ -26,8 +30,8 @@ header{
 
 .header_bouton:hover{
     box-shadow: 0em 0.5em rgb(82, 177, 231);
-    animation: main_bouton_hover 0.5s ease-out 0s 1;
-    -webkit-animation: main_bouton_hover 0.5s ease-out 0s 1;
+    animation: header_bouton_hover 0.5s ease-out 0s 1;
+    -webkit-animation: header_bouton_hover 0.5s ease-out 0s 1;
 }
 
 .header_navbar{
@@ -59,6 +63,10 @@ header{
     background-color: #0000;
     background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
     border: 0.2em solid rgb(82, 177, 231);
+}
+
+main{
+    background-color: #EEE;
 }
 
 .bloc_cadre{
@@ -103,4 +111,18 @@ td{
 
 td:hover{
     background-color: #DDDD;
+}
+
+footer a, footer p{
+    margin: 1em;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer a:visited{
+    text-decoration: underline;
 }

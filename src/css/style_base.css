@@ -113,14 +113,41 @@ header{
 }
 
 .header_navbar{
-    padding-left: 3em;
-    padding-right: 3em; 
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em; 
+    padding-top: 0;
+    padding-bottom: 0;
     background-color: rgb(111, 199, 140);
     display: flex; 
     flex-direction: row;
     align-items: center;
+    overflow-x: scroll;
+}
+
+@media only screen and (orientation:landscape) {
+    .header_navbar{
+        display: none;
+    }
+}
+
+.header_navbar_bouton{
+    padding:1em;
+    color:#000;
+    background-color: #0000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header_navbar p {
+    white-space: nowrap;
+}
+
+.header_navbar_bouton:hover{
+    padding:1em;
+    color:#000;
+    background-color: #FFF5;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .header_séparateur{
@@ -153,9 +180,18 @@ header{
     background-color: rgb(51, 107, 190);
 }
 
-.corp{
-    display: grid; 
-    grid-template-columns: 12.5% 75% 12.5%;
+@media only screen and (orientation:landscape) {
+    .corp{
+        display: grid; 
+        grid-template-columns: 15em 75% 12.5%;
+    }
+}
+
+@media only screen and (orientation:portrait){
+    .corp{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .menu_cadre{
@@ -170,6 +206,12 @@ header{
     border-radius: 1em; 
     border: 1px solid #afafaf; 
     box-shadow: 0 0 2em #0002;
+}
+
+@media only screen and (orientation:portrait){
+    .menu_cadre{
+        display: none;
+    }
 }
 
 .menu_bouton{
@@ -227,9 +269,19 @@ main{
     -o-border-radius: 1em;
 }
 
-.bloc_contenu{
-    display: flex;
-    flex-direction: row;
+@media only screen and (orientation:landscape){
+    .bloc_contenu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (orientation:portrait){
+    .bloc_contenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 video, .img_c{
@@ -282,9 +334,19 @@ video, .img_c{
     -webkit-animation: main_bouton_hover 0.5s ease-out 0s 1;
 }
 
-.contenu_média{
-    width: 50%; 
-    max-width: 35em;
+@media only screen and (orientation:landscape){
+    .contenu_média{
+        width: 50%; 
+        max-width: 35em;
+    }
+}
+
+@media only screen and (orientation:portrait){
+    .contenu_média{
+        width: 100%; 
+        max-width: 35em;
+        margin: 1em;
+    }
 }
 
 .contenu_texte{
@@ -321,4 +383,17 @@ td{
 
 td:hover{
     background-color: #DDDD;
+}
+
+.icône{
+    width: 2em;
+}
+
+.icône img{
+    vertical-align: bottom;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
 }
