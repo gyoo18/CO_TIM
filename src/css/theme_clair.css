@@ -17,13 +17,9 @@ footer{
 
 @keyframes header_bouton_hover{
     from {
-        background-position: 100%;
-        padding: 0.5em;
         box-shadow: 0em 0em rgb(82, 177, 231);
     }
     to {
-        background-position: 0%;
-        padding: 0.55em;
         box-shadow: 0em 0.5em rgb(82, 177, 231);
     }
 }

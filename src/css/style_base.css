@@ -84,32 +84,31 @@ header{
 .header_bouton{
     font-size: 1.2rem;
     height: min-content;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem;
     margin-left: 0.25rem;
     margin-right: 0.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: #0000;
     border-width: 0;
     cursor: default;
+    box-shadow: 0em 0em rgb(82, 177, 231);
 }
 
 @keyframes header_bouton_hover{
     from {
-        box-shadow: 0rem 0rem rgb(82, 177, 231);
+        box-shadow: 0em 0em rgb(82, 177, 231);
     }
     to {
-        box-shadow: 0rem 0.5rem rgb(82, 177, 231);
+        box-shadow: 0em 0.5em rgb(82, 177, 231);
     }
 }
 
 .header_bouton:hover{
     cursor: pointer;
-    box-shadow: 0rem 0.5rem rgb(82, 177, 231);
-    animation-name : header_bouton_hover;
-    animation-duration: 100ms;
-    animation-iteration-count: 1;
+    box-shadow: 0em 0.5em rgb(82, 177, 231);
+    animation: header_bouton_hover 100ms ease 0 1;
+    -webkit-animation: header_bouton_hover 100ms ease 0 1;
 }
 
 .header_navbar{
