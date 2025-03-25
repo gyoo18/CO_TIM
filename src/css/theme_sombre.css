@@ -20,7 +20,7 @@ a:visited{
 
 header{
     background-color: rgb(39, 82, 53);
-    box-shadow: 0 0.1em 1em #00000088;
+    box-shadow: 0 0.1rem 1rem #00000088;
 }
 
 footer{
@@ -34,15 +34,15 @@ footer{
 
 @keyframes header_bouton_hover{
     from {
-        box-shadow: 0em 0em rgb(82, 177, 231);
+        box-shadow: 0rem 0rem rgb(82, 177, 231);
     }
     to {
-        box-shadow: 0em 0.5em rgb(82, 177, 231);
+        box-shadow: 0rem 0.5rem rgb(82, 177, 231);
     }
 }
 
 .header_bouton:hover{
-    box-shadow: 0em 0.5em rgb(82, 177, 231);
+    box-shadow: 0rem 0.5rem rgb(82, 177, 231);
 }
 
 .header_navbar{
@@ -56,7 +56,7 @@ footer{
 .bouton_haut{
     color: white;
     background-color: rgb(51, 107, 190);
-    box-shadow: 0 0 1em #0003;
+    box-shadow: 0 0 1rem #0003;
 }
 
 .bouton_haut:hover{
@@ -70,53 +70,52 @@ main{
 .menu_cadre{
     background-color: rgb(39, 39, 39); 
     border: 1px solid #181818; 
-    box-shadow: 0 0 2em #0002;
+    box-shadow: 0 0 2rem #0002;
 }
 
 .menu_bouton{
     color: rgb(82, 177, 231);
     background-color: #0000;
     background-image: linear-gradient(to right,rgb(51,107,190) 50%, #0000 50%);
-    border: 0.2em solid rgb(30, 72, 134);
+    border: 0.2rem solid rgb(30, 72, 134);
 }
 
 .bloc_cadre{
     border: 2px solid #0001;
-    box-shadow: 1em 1em 10em #FFF1;
+    box-shadow: 1rem 1rem 10rem #FFF1;
 }
 
 video, .img_c{
-    box-shadow: 1em 1em rgb(51, 107, 190);
+    box-shadow: 1rem 1rem rgb(51, 107, 190);
 }
 
 .main_bouton{
     color: rgb(82, 177, 231);
     background-color: #0000;
     background-image: linear-gradient(to right,rgb(51,107,190) 50%, #0000 50%);
-    
-    border: 0.4em solid rgb(30, 72, 134);
-    box-shadow: 0.5em 0.5em rgb(51,107,190);
+    border: 0.75rem solid rgb(30, 72, 134);
+    box-shadow: 1rem 1rem rgb(51,107,190);
 }
 
 @keyframes main_bouton_hover {
     from{
         background-position: 100%;
-        padding: 0.5em;
-        box-shadow: 0.5em 0.5em rgb(51,107,190);
+        padding: 0.5rem;
+        box-shadow: 1rem 1rem rgb(51,107,190);
     }
     to{
         background-position: 0%;
-        padding: 0.55em;
-        box-shadow: 0.2em 0.2em rgb(51,107,190);
+        padding: 0.55rem;
+        box-shadow: 0.2rem 0.2rem rgb(51,107,190);
     }
 }
 
 .main_bouton:hover{
-    box-shadow: 0.2em 0.2em rgb(51,107,190);
+    box-shadow: 0.2rem 0.2rem rgb(51,107,190);
 }
 
 table{
-    box-shadow: 1em 1em #4583c971;
+    box-shadow: 1rem 1rem #4583c971;
 }
 
 td{
@@ -129,10 +128,10 @@ td:hover{
 }
 
 footer a, footer p{
-    margin: 1em;
+    margin: 1rem;
     color: white;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 footer a:hover{
@@ -146,7 +145,7 @@ footer a:visited{
 }
 
 .bloc_fermable_bouton{
-    border: 0.5rem solid rgb(30, 72, 134);
+    border: 0.5rrem solid rgb(30, 72, 134);
     color:rgb(82, 177, 231);
 }
 
