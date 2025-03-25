@@ -16,6 +16,12 @@ html, body{
     scroll-snap-type: y mandatory;
 }
 
+@media only screen and (max-width:800px) {
+    html{
+        font-size: 2em;
+    }
+}
+
 * {
     z-index: 950;
     position: relative;
