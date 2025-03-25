@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>CO Tec Intégration Multimédia - Acceuil</title>
+        <link rel="stylesheet" href="../css/style_base.css">
+        <link rel="stylesheet" href="../css/theme_clair.css">
+        <script src="../javascript/changement_theme.js"></script>
+        <script src="../javascript/ouvrir-fermer_élément.js"></script>
+
+        <style>
+            .bloc_titre{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
+                <div class="header_gauche">
+                    <button class="header_bouton" onclick="window.location.href='https://cegepoutaouais.qc.ca/accueil-2/';">Acceuil</button>
+                    <button class="header_bouton" onclick="window.location.href='Acceuil-fr.html';">Retour</button>
+                    <button class="header_bouton" onclick="window.location.href='';">Nous joindre</button>
+                    <button class="header_bouton" onclick="changer_theme();"><div class="icône"><img src="../../res/icônes/bouton_theme_clair.png"></div></button>
+                </div>
+            </div>
+            <div class="header_séparateur"></div>
+        </header>
+
+        <button class="bouton_haut" onclick="window.location.href='#1'">
+            ▲
+        </button>
+
+        <!-- Corp -->
+        <div class="corp">
+            <menu></menu>
+            <main>
+                <h1>FAQ</h1>
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Comment fonctionnent les stages ?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Lors de ta 5<sup>e</sup> session, un cours spécifique est à l’horaire afin de t’encadrer dans la démarche de stage. Il s’agit d’un 
+                            stage rémunéré de 4 mois. Nous avons de solides partenaires depuis notre fondation en 2000 dans différentes entreprises de multimédia 
+                            de la région ou dans la fonction publique fédérale. La plupart du temps, le stage se transforme en emploi. C’est le début d’une superbe 
+                            carrière en multimédia.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Le programme en multimédia, c’est un DEC technique ?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Oui!<br>
+                            <b>Cela signifie que</b> c’est une formation de 3 ans qui te permet d’acquérir des compétences spécifiques pour le marché du travail.
+                            L’avantage avec nous, c’est 2 ans ½ à l’école et ta dernière session en stage rémunéré ! Le cheminement idéal pour débuter une carrière 
+                            riche en défi et payante au niveau monétaire !
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Dois-je être déjà bon en programmation ou avec les logiciels d’ADOBE®?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Oui!<br>
+                            NON ! Nous partons la formation du début pour tous ! Mais… si tu as envie de réaliser une foule de productions interactives comme des 
+                            sites Internet et que tu rêves d’apprendre toutes sortes de techniques liées au design graphique, à la programmation, à la modélisation 
+                            et l’animation 3D, au traitement audio, au montage vidéo… <i>Et bien, il faudrait vraiment t’inscrire !</i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Est-ce qu’on fait beaucoup de programmation?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            <b>Oui.</b><br>
+                            Comme la formation utilise principalement les technologies du web, les langages HTML, CSS, JavaScript et PHP/MySQL sont nécessaires 
+                            pour supporter l’affichage, l’animation et l’interactivité des projets. La programmation est toujours au service de la création et 
+                            permet de réaliser de belles et grandes choses, que ça soit un site web, un microjeu pour appareil mobile ou une installation interactive.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Est-ce qu’on fait beaucoup de 3D?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Pas tant. <b>La formation inclut seulement 2 cours de 3D. Toutefois, les étudiants voulant en faire davantage seront toujours 
+                            supportés par leurs professeurs. De plus, comme le domaine de la 3D et des jeux vidéo AAA nécessitent des études universitaires 
+                            spécialisées, notre formation inclut la création d’un portfolio professionnel, qui représente un grand avantage pour faire des 
+                            demandes d’admission vers plusieurs des programmes universitaires concernés.</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Est-ce que c’est un programme créatif ou technique?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Les deux! <b>Le multimédia est un domaine créatif dans la mesure où on doit créer des présentations, sites web, applications ou 
+                            microjeux à partir de rien. On est donc amené à créer des médias tels que des images, illustrations, animations. Toutefois, le 
+                            programme présente également un aspect technique afin de pouvoir programmer plusieurs aspects de nos créations avec des langages 
+                            de programmation, qui permettent de créer de l’interactivité.</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Est-ce qu'on fait beaucoup de web?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Oui! <b>Comme il n’existe pas de formation universitaire dans le domaine web, nous préparons nos étudiants à se trouver un emploi 
+                            dans ce domaine en pleine expansion. Toutefois, notre formation multidisciplinaire touche à plusieurs aspects et permet 
+                            d’appliquer dans plusieurs programmes universitaires en 3D, jeux vidéo, design graphique et médias interactifs.</b>
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <div class="header_séparateur"></div>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
+                <p>©Vincent Godbout 2025</p>
+                <a href="#1">Haut</a>
+                <a href="https://cegepoutaouais.qc.ca/accueil-2/">Acceuil</a>
+
+                <div class="header_gauche">
+                    <a href="https://www.facebook.com/cegep.outaouais/" class="icône"><img src="../../res/icônes/facebook_clair.png"></a>
+                    <a href="https://www.instagram.com/cegepoutaouais/" class="icône"><img src="../../res/icônes/instagram_clair.png"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <div class="background-image"></div>
+    <div class="background_couleur_base"></div>
+</html>

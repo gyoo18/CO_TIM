@@ -395,3 +395,26 @@ td:hover{
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
+
+.bloc_fermable_bouton{
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    width:  3.5rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border: 0.5rem solid rgb(82, 177, 231);
+    color:rgb(51, 107, 190);
+    background-color: #0000;
+}
+
+.bloc_fermable_bouton:hover{
+    cursor: pointer;
+    background-color: rgb(168, 212, 230);
+}

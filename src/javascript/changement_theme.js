@@ -27,3 +27,9 @@ function changer_theme(){
         theme_couleur = "clair";
     }
 }
+
+document.addEventListener("DOMContentLoaded", function(){
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+        changer_theme();
+    }
+},false);

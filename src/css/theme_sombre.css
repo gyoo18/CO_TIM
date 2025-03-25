@@ -144,3 +144,12 @@ footer a:visited{
     color:#AAA;
     text-decoration: underline;
 }
+
+.bloc_fermable_bouton{
+    border: 0.5rem solid rgb(30, 72, 134);
+    color:rgb(82, 177, 231);
+}
+
+.bloc_fermable_bouton:hover{
+    background-color: rgb(51, 107, 190);
+}
