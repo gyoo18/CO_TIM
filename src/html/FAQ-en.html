@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>CO Tec Intégration Multimédia - Acceuil</title>
+        <link rel="stylesheet" href="../css/style_base.css">
+        <link rel="stylesheet" href="../css/theme_clair.css">
+        <script src="../javascript/changement_theme.js"></script>
+        <script src="../javascript/ouvrir-fermer_élément.js"></script>
+
+        <style>
+            .bloc_titre{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
+                <div class="header_gauche">
+                    <button class="header_bouton" onclick="window.location.href='https://cegepoutaouais.qc.ca/accueil-2/';">Home</button>
+                    <button class="header_bouton" onclick="window.location.href='Acceuil-en.html';">Back</button>
+                    <button class="header_bouton" onclick="window.location.href='';">Contact us</button>
+                    <button class="header_bouton" onclick="changer_theme();"><div class="icône"><img src="../../res/icônes/bouton_theme_clair.png"></div></button>
+                    <button class="header_bouton" onclick="window.location.href='FAQ-fr.html';"><div class="icône"><img src="../../res/icônes/langue_clair.png"></div></button>
+                </div>
+            </div>
+            <div class="header_séparateur"></div>
+        </header>
+
+        <button class="bouton_haut" onclick="window.location.href='#1'">
+            ▲
+        </button>
+
+        <!-- Corp -->
+        <div class="corp">
+            <menu></menu>
+            <main>
+                <h1>FAQ</h1>
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>How do internships work ?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            During your fifth semester, a specific course will be given to help you get an internship. It is a 4-months paid internship.
+                            We have solid partners dating back to our foundation in 2000 in different multimedia companies of the region or in the federal
+                            sector. Most of the time, the interships transform into jobs. It is the start of a wonderfull multimedia carreer.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>The multimedia program, is it a Technic DCS ?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Yes!<br>
+                            <b>That means</b> it is a 3 year course that lets you aqcuire the skills necessary for the job market. The advantage with us is 2½ years
+                            in school and your last semester in a paid internship! The ideal path to start a stimulating and financially successfull carreer!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Do I need to be good at programming or with ADOBE® software?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            NO ! We start the course from scratch for everyone! But… if you would like to create interactive productions like websites and if
+                            you dream of learninf all sorts of graphic desing, programming, 3D modeling and animation, audio processing, video editing techniques and more…
+                            <i>Well, you should really signup!</i>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Is there going to be a lot of programming?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            <b>Yes.</b><br>
+                            Since the course largely uses web technologies, HTML, JavaScript and PHP/MySQL are necessary to support teh rendering, the animation and
+                            the interactivity of projects. The programming is always in service of the creation and allows for the realisation of beautifull and great
+                            things, weither it be a website, a microgame for mobile or an interactive installation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Will there be lots of 3D?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Not very much. <b>The course only includes 2 classes in 3D. However, the students willing to go further will always be supported
+                            by their teachers. Furthermore, since the domain of 3D and AAA games require specialised university studies, our course includes
+                            the creation of a personnal professional portfolio, which represents a great advantage for application on many of the concerned 
+                            programs.</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Is a creative or technical program?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            It's both! <b>Multimedia is a creative domaine in that it is necessary to create presentations, websites, applications or 
+                            microgames from scratch. One therefore has to create media content like images, illustrations, animations. However, the program
+                            also presents a technical aspect as to be able to programm many aspects of one's creation with programming languages, which
+                            creates an opportunity for interactivity.
+                            </b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h2>Are web technologies very present?</h2>
+                        <button class="bloc_fermable_bouton" onclick="fermer_élément(this);">+</button>
+                    </div>
+                    <div class="bloc_contenu">
+                        <p>
+                            Yes! <b>Since there does not exists a university course in web desing, we prepare our students to find a job in this expanding domain.
+                                However, our multidisciplinary course touches on many aspects and enables the application in many university programms in 3D,
+                                game design, graphic design and interactive media.
+                            </b>
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <div class="header_séparateur"></div>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
+                <p>©Vincent Godbout 2025</p>
+                <a href="#1">Top</a>
+                <a href="https://cegepoutaouais.qc.ca/accueil-2/">Home</a>
+
+                <div class="header_gauche">
+                    <a href="https://www.facebook.com/cegep.outaouais/" class="icône"><img src="../../res/icônes/facebook_clair.png"></a>
+                    <a href="https://www.instagram.com/cegepoutaouais/" class="icône"><img src="../../res/icônes/instagram_clair.png"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <div class="background-image"></div>
+    <div class="background_couleur_base"></div>
+</html>
