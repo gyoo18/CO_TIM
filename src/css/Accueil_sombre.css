@@ -1,0 +1,156 @@
+html{
+    background-color: #000;
+}
+
+@media only screen and (orientation:landscape) {
+    .corp{
+        display: grid; 
+        grid-template-columns: 15em 75% 12.5%;
+    }
+}
+
+.background-image{
+    background-image: url('../../res/images/programmeTIM.png');
+}
+
+.bouton_programme{
+    padding: 0;
+    padding-bottom: -1em;
+    max-width: max-content;
+    max-height: max-content;
+    object-fit: cover;
+    background-color: #0000;
+    border-width: 0;
+    width: 35em;
+    max-width: 80%;
+    border-radius: 0;
+
+    box-shadow: 2em 2em rgb(51,107,190);
+    top: 2em;
+}
+
+@keyframes bouton_programme_hover {
+    from{
+        background-position: 100%;
+        box-shadow: 2em 2em rgb(51,107,190);
+        top: 2em;
+        width: 35em;
+        border-radius: 0;
+    }
+    to{
+        background-position: 0%;
+        box-shadow: 0.5em 0.5em rgb(51,107,190);
+        top: 0;
+        width: 37em;
+        border-radius: 5em;
+        -webkit-border-radius: 5em;
+        -moz-border-radius: 5em;
+        -ms-border-radius: 5em;
+        -o-border-radius: 5em;
+}
+}
+
+.bouton_programme:hover{
+    cursor: pointer;
+    box-shadow: 0.5em 0.5em rgb(51,107,190);
+    top: 0;
+    width: 37em;
+    border-radius: 5em;
+    animation: bouton_programme_hover 0.5s ease-out 0s 1;
+    -webkit-animation: bouton_programme_hover 0.5s ease-out 0s 1;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+}
+
+.bouton_programme_image{
+    max-width: 100%; 
+    max-height: 100%; 
+    background-color: #0000;
+    border-radius: 0;
+    vertical-align: bottom;
+}
+
+@keyframes bouton_programme_image_hover {
+    from {
+        border-radius: 0;
+    }
+
+    to {
+        border-radius: 5em;
+        -webkit-border-radius: 5em;
+        -moz-border-radius: 5em;
+        -ms-border-radius: 5em;
+        -o-border-radius: 5em;
+}
+}
+
+.bouton_programme_image:hover{
+    border-radius: 5em;
+    animation: bouton_programme_image_hover 0.5s ease-out 0s 1;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+}
+
+.section_diplômés{
+    display: flex; 
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.fiche_diplômé{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1em;
+    width: 25em;
+    min-width: 25em;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0001;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(79, 111, 146, 0.247);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+.fiche_diplômé div{
+    width: 17em;
+}
+
+.fiche_diplômé h2{
+    scroll-snap-align: center;
+}
+
+.fiche_diplômé .cadre_description_diplômé{
+    overflow-y: scroll;
+    width: 100%;
+    height: 20em;
+    border:     1px solid #0003;
+    background-color: #FFF1;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+}
+
+
+.section_diplômés p{
+    font-size: 1em;
+}
+
+.uqat{
+    border: 0.5em solid rgb(82, 177, 231);
+}
+
+td div div{
+    background-color: rgba(231, 250, 255, 0.533);
+    border-radius: 4em;
+    padding: 5px
+}

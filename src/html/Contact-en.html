@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Nous contacter</title>
+        <link rel="stylesheet" href="../css/style_base.css">
+        <link rel="stylesheet" href="../css/theme_clair.css">
+        <link rel="stylesheet" href="../css/Contact_clair.css">
+        <script src="../javascript/changement_theme.js"></script>
+        <script src="../javascript/envoyer_courriel.js"></script>
+        <script src="../javascript/header_scroll.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
+                <div class="header_gauche">
+                    <button class="header_bouton" onclick="window.location.href='https://cegepoutaouais.qc.ca/accueil-2/';">Home</button>
+                    <button class="header_bouton" onclick="window.location.href='FAQ-en.html';">FAQ</button>
+                    <button class="header_bouton" onclick="window.location.href='Accueil-en.html';">Back</button>
+                    <button class="header_bouton" onclick="changer_theme();"><div class="icône"><img src="../../res/icônes/bouton_theme_clair.png"></div></button>
+                    <button class="header_bouton" onclick="window.location.href='Contact-fr.html';"><div class="icône"><img src="../../res/icônes/langue_clair.png"></div></button>
+                </div>
+            </div>
+            <div class="header_séparateur"></div>
+        </header>
+
+        <button class="bouton_haut" onclick="window.location.href='#1'">
+            ▲
+        </button>
+
+        <div class = "corp">
+            <menu></menu>
+            <main>
+                <div class="bloc_cadre">
+                    <div class="bloc_titre">
+                        <h1>Send us a message!</h1>
+                    </div>
+                    <div class="bloc_contenu">
+                        <form>
+                            <div>
+                                <input id="nom" type="text" placeholder="Name">
+                                <input id="courriel" type="email" placeholder="Email">
+                                <textarea id="message" placeholder="Message" style="grid-column: 1 / span 2"></textarea>
+                            </div>
+                            <button class="main_bouton" onsubmit="envoyerCourriel();">Send</button>
+                            
+                        </form>
+                        <div style="margin:10px">
+                            <h2>Contact info :</h2>
+                            <p>
+                                <b>Gabrielle-Roy Campus</b><br>
+                                333, boul. de la Cité-des-Jeunes<br>
+                                Gatineau, QC J8Y 6M4<br>
+                                <a href="https://goo.gl/maps/ZgyMY7VGEJZSaK2FA">See on maps</a><br>
+                                <br>
+                                <b>Félix-Leclerc Campus</b><br>
+                                820, boul. de la Gappe<br>
+                                Gatineau, QC J8T 7T7<br>
+                                <a href="https://goo.gl/maps/wqnHfV81cWnesSb39">See on maps</a><br>
+                                <br>
+                                <b>Louis-Reboul Campus</b><br>
+                                125, boul. Sacré-Coeur<br>
+                                Gatineau, QC J8X 1C5<br>
+                                <a href="https://goo.gl/maps/DvdMTKpAU9WLJcGWA">See on maps</a><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc_cadre">
+                    <div class="bloc_contenu">
+                        <div style="margin:10px">
+                            <h2>Phone number</h2>
+                            <p>
+                                <a href="tel:+8197704012" class="tel">819-770-4012</a><br>
+                                Tariff-free : <a href="tel:+18667704012" class="tel">1-866-770-4012</a>
+                            </p>
+                        </div>
+                        <div style="margin:10px">
+                            <h2>Security</h2>
+                            <p>
+                                Gabrielle-Roy Campus : <a href="tel:+8197704012" class="tel">819-770-4012</a>, ext 2911<br>
+                                Félix-Leclerc Campus : <a href="tel:+8197704012" class="tel">819-770-4012</a>, ext 3911<br>
+                                Louis-Reboul Campus : <a href="tel:+8197704012" class="tel">819-770-4012</a>, ext 4911<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bloc_cadre">
+                    <h2>Registrar's office:</h2>
+                    <p>
+                        Gabrielle-Roy Campus : <a href="tel:+8197704012" class="tel">819-770-4012</a>, ext 6022 – <b>Room G2828</b><br>
+                        Félix-Leclerc Campus : <a href="tel:+8197704012" class="tel">819-770-4012</a>, ext 6023 – <b>Room F1141</b><br>
+                        Louis-Reboul Campus : <a href="tel:+8197704012" class="tel">819-770-4012</a>, ext 6066 – <b>Room R1102</b>
+                    </p>
+                    <h3>Office's open hours (summer)</h3>
+                    <p>
+                        Félix-Leclerc and Gabrielle-Roy
+                        Closed : 2 to 12 July inclusive
+                        Open : 15 to 26 July, Tuesday to Thursday, 7:30 AM to 3:30 PM
+                    </p>
+                </div>
+                <div class="bloc_cadre">
+                    <h2>Campuses Open Hours</h2>
+                    <p>
+                        <h3>Gabrielle-Roy :</h3>
+                        <p>
+                            - Monday to Sunday : 6:30 AM to 11 PM*<br>
+                            *Door 19 is unlocked after 6:30 AM. The other doors are unlocked afterwards, starting with doors 22 and 26.</p>
+                        <h3>Félix-Leclerc :</h3>
+                        <p>
+                            - Monday to Friday, 7 AM to 10:30 PM<br>
+                            - Saturday and Sunday during the 7:30 AM - 5 PM session
+                        </p>
+                        <h3>Louis-Reboul :</h3>
+                        <p>
+                            - Lundi au vendredi de 6h45 à 22h00
+                        </p>
+                        <p>
+                            We inform you that the exterior doors will be locked 30 minutes before the noted above closure
+                            time to allow our security guards to make their final round around the campus so that it can be 
+                            completely evacuated at closing time. <b>We therefore ask you 30 minutes before closing time to 
+                            facilitate securing our campuses.</b>
+                        </p>
+                    </p>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <div class="header_séparateur"></div>
+            <div class="header_contenu">
+                <a href="https://cegepoutaouais.qc.ca/" style="width:8em"><img src="../../res/images/logo_CO_clair.png"></a>
+                <p>©Vincent Godbout 2025</p>
+                <a href="#1">Haut</a>
+                <a href="https://cegepoutaouais.qc.ca/accueil-2/">Acceuil</a>
+
+                <div class="header_gauche">
+                    <a href="https://www.facebook.com/cegep.outaouais/" class="icône"><img src="../../res/icônes/facebook_clair.png"></a>
+                    <a href="https://www.instagram.com/cegepoutaouais/" class="icône"><img src="../../res/icônes/instagram_clair.png"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <div class="background-image"></div>
+    <div class="background_couleur_base"></div>
+</html>

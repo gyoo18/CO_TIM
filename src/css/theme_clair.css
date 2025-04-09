@@ -1,10 +1,10 @@
 .background_couleur_base{
-    background-color: #CCCA;
+    background-color: rgba(255, 255, 255, 0.667);
 }
 
 header{
     background-color: rgb(111, 199, 140);
-    box-shadow: 0 0.1rem 1rem #00000088;
+    box-shadow: 0 0.1em 1em #00000088;
 }
 
 footer{
@@ -17,15 +17,15 @@ footer{
 
 @keyframes header_bouton_hover{
     from {
-        box-shadow: 0rem 0rem rgb(82, 177, 231);
+        box-shadow: 0em 0em rgb(82, 177, 231);
     }
     to {
-        box-shadow: 0rem 0.5rem rgb(82, 177, 231);
+        box-shadow: 0em 0.5em rgb(82, 177, 231);
     }
 }
 
 .header_bouton:hover{
-    box-shadow: 0rem 0.5rem rgb(82, 177, 231);
+    box-shadow: 0em 0.5em rgb(82, 177, 231);
     animation: header_bouton_hover 0.5s ease-out 0s 1;
     -webkit-animation: header_bouton_hover 0.5s ease-out 0s 1;
 }
@@ -41,7 +41,7 @@ footer{
 .bouton_haut{
     color: white;
     background-color: rgb(82, 177, 231);
-    box-shadow: 0 0 1rem #0003;
+    box-shadow: 0 0 1em #0003;
 }
 
 .bouton_haut:hover{
@@ -49,29 +49,37 @@ footer{
 }
 
 .menu_cadre{
-    background-color: rgb(238, 238, 238); 
-    border: 1px solid #afafaf; 
-    box-shadow: 0 0 2rem #0002;
+    background-color: rgb(255, 255, 255); 
+    border-color: #afafaf; 
+    box-shadow: 0 0 2em #0002;
 }
 
 .menu_bouton{
     color: rgb(51, 107, 190);
     background-color: #0000;
     background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
-    border: 0.2rem solid rgb(82, 177, 231);
+    border-color: rgb(82, 177, 231);
 }
 
 main{
-    background-color: #EEE;
+    background-color: #ffffff;
 }
 
 .bloc_cadre{
-    border: 2px solid #0001;
-    box-shadow: 1rem 1rem 10rem #0001;
+    border-color: #0001;
+    box-shadow: 1em 1em 10em #0001;
+}
+
+.bloc_cadre.coulB{
+    background-color: rgb(129, 212, 156);
+}
+
+.bloc_cadre.coulC{
+    background-color: rgb(240, 220, 132);
 }
 
 video, .img_c{
-    box-shadow: 1rem 1rem rgb(82, 177, 231);
+    box-shadow: 1em 1em rgb(82, 177, 231);
 }
 
 .main_bouton{
@@ -79,33 +87,33 @@ video, .img_c{
     background-color: #0000;
     background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
     
-    border: 0.75rem solid rgb(82, 177, 231);
-    box-shadow: 1rem 1rem #0000001e;
+    border-color: rgb(82, 177, 231);
+    box-shadow: 20px 20px #0000001e;
 }
 
 @keyframes main_bouton_hover {
     from{
         background-position: 100%;
-        padding: 0.5rem;
-        box-shadow: 1rem 1rem #0000001e;
+        padding: 0.5em;
+        box-shadow: 20px 20px #0000001e;
     }
     to{
         background-position: 0%;
-        padding: 0.55rem;
-        box-shadow: 0.2rem 0.2rem #0000001e;
+        padding: 0.55em;
+        box-shadow: 5px 5px #0000001e;
     }
 }
 
 .main_bouton:hover{
-    box-shadow: 0.2rem 0.2rem #0000001e;
+    box-shadow: 5px 5px #0000001e;
 }
 
 table{
-    box-shadow: 1rem 1rem #4583c971;
+    box-shadow: 1em 1em #4583c971;
 }
 
 td{
-    border: 1px solid rgb(82, 177, 231);
+    border-color: rgb(82, 177, 231);
     background-color: #0000;
 }
 
@@ -114,9 +122,9 @@ td:hover{
 }
 
 footer a, footer p{
-    margin: 1rem;
+    margin: 1em;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 footer a:hover{
@@ -128,7 +136,7 @@ footer a:visited{
 }
 
 .bloc_fermable_bouton{
-    border: 0.5rem solid rgb(82, 177, 231);
+    border-color: rgb(82, 177, 231);
     color:rgb(51, 107, 190);
 }
 

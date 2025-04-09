@@ -1,0 +1,44 @@
+@media only screen and (orientation:landscape){
+    .bloc_contenu{
+        display: grid; 
+        grid-template-columns: 50% 50%;
+        width: 100%;
+    }
+}
+
+@media only screen and (orientation:portrait){
+    .bloc_contenu{
+        display: flex; 
+        flex-direction: column;
+    }
+}
+menu{
+    margin: 0;
+    padding: 0;
+}
+.tel{
+    font-weight: bold;
+    color : #000000;
+    text-decoration: none;
+}
+.tel:hover{
+    color : #068f18;
+    text-decoration: underline;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+form div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 75%;
+    width: 100%;
+    height: 20em;
+    box-shadow: 0 0 50px #0002;
+    background-color: #0001;
+}

@@ -13,18 +13,12 @@
 html, body{
     padding:0;
     margin: 0;
-    scroll-snap-type: y mandatory;
-}
-
-@media only screen and (max-width:20cm) {
-    html{
-        font-size: 2em;
-    }
 }
 
 * {
     z-index: 950;
     position: relative;
+    border: 0px solid black;
 }
 
 .background-image{
@@ -48,7 +42,7 @@ h1, h2, h3{
 }
 
 h1{
-    scroll-margin-top: 10rem;
+    scroll-margin-top: 10em;
 }
 
 em {
@@ -58,21 +52,33 @@ em {
 img {
     max-width: 100%;
     max-height: 100%;
+    vertical-align: bottom;
 }
 
 header{
     z-index: 960;
     background-color: rgb(111, 199, 140);
-    box-shadow: 0 0.1rem 1rem #00000088;
+    box-shadow: 0 0.1em 1em #00000088;
     position: sticky;
     top: 0;
+    max-height: 10em;
+}
+
+header.petit{
+    font-size: 0.75em;
+    transition: all 0.5s;
+}
+
+header.grand{
+    font-size: 1em;
+    transition: all 0.5s;
 }
 
 .header_contenu{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 1rem; 
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 3em;
+    padding-bottom: 1em; 
     display: flex; 
     flex-direction: row;
     align-items: center;
@@ -88,11 +94,11 @@ header{
 }
 
 .header_bouton{
-    font-size: 1.2rem;
+    font-size: 1.2em;
     height: min-content;
-    padding: 0.5rem;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    padding: 0.5em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
     margin-top: 0;
     margin-bottom: 0;
     background-color: #0000;
@@ -118,8 +124,8 @@ header{
 }
 
 .header_navbar{
-    padding-left: 1rem;
-    padding-right: 1rem; 
+    padding-left: 1em;
+    padding-right: 1em; 
     padding-top: 0;
     padding-bottom: 0;
     background-color: rgb(111, 199, 140);
@@ -136,7 +142,7 @@ header{
 }
 
 .header_navbar_bouton{
-    padding:1rem;
+    padding:1em;
     color:#000;
     background-color: #0000;
     text-decoration: none;
@@ -148,7 +154,7 @@ header{
 }
 
 .header_navbar_bouton:hover{
-    padding:1rem;
+    padding:1em;
     color:#000;
     background-color: #FFF5;
     text-decoration: none;
@@ -157,27 +163,27 @@ header{
 
 .header_séparateur{
     background-color: rgb(35, 18, 128); 
-    height: 0.4rem; 
+    height: 0.4em; 
     width: 100%
 }
 
 .bouton_haut{
     z-index: 960;
     position: fixed;
-    bottom: 5rem;
-    right: 5rem;
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.5rem;
+    bottom: 5em;
+    right: 5em;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
     color: white;
     background-color: rgb(82, 177, 231);
     border-width: 0;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
-    box-shadow: 0 0 1rem #0003;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    box-shadow: 0 0 1em #0003;
 }
 
 .bouton_haut:hover{
@@ -188,7 +194,7 @@ header{
 @media only screen and (orientation:landscape) {
     .corp{
         display: grid; 
-        grid-template-columns: 15rem 75% 12.5%;
+        grid-template-columns: 12.5% 75% 12.5%;
     }
 }
 
@@ -202,15 +208,15 @@ header{
 .menu_cadre{
     display: flex; 
     flex-direction: column; 
-    padding: 1rem; 
-    margin: 1rem; 
+    padding: 1em; 
+    margin: 1em; 
     position: sticky; 
-    top: 8rem; 
+    top: 10em; 
     align-self: self-start; 
     background-color: rgb(238, 238, 238); 
-    border-radius: 1rem; 
+    border-radius: 1em; 
     border: 1px solid #afafaf; 
-    box-shadow: 0 0 2rem #0002;
+    box-shadow: 0 0 2em #0002;
 }
 
 @media only screen and (orientation:portrait){
@@ -220,58 +226,58 @@ header{
 }
 
 .menu_bouton{
-    font-size: 1rem;
+    font-size: 1em;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(51, 107, 190);
     font-weight: bold;
-    padding: 0.5rem;
-    margin:0.2rem;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    padding: 0.5em;
+    margin:0.2em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
     object-fit: cover;
     background-color: #0000;
     background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
     background-size: 200%;
     background-position: 100%;
-    border: 0.2rem solid rgb(82, 177, 231);
+    border: 0.2em solid rgb(82, 177, 231);
 }
 
 @keyframes menu_bouton_hover {
     from{
         background-position: 100%;
-        padding: 0.5rem;
+        padding: 0.5em;
     }
     to{
         background-position: 0%;
-        padding: 0.55rem;
+        padding: 0.55em;
     }
 }
 
 .menu_bouton:hover{
     cursor: pointer;
     background-position: 0%;
-    padding: 0.55rem;
+    padding: 0.55em;
     animation: menu_bouton_hover 0.5s ease-out 0s 1;
     -webkit-animation: menu_bouton_hover 0.5s ease-out 0s 1;
 }
 
 main{
-    padding : 3rem;
+    padding : 3em;
 }
 
 .bloc_cadre{
-    padding: 2rem;
-    margin-bottom:5rem;
+    padding: 2em;
+    margin-bottom:5em;
     border: 2px solid #0001;
-    box-shadow: 1rem 1rem 10rem #0001;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
+    box-shadow: 1em 1em 10em #0001;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
 }
 
 @media only screen and (orientation:landscape){
@@ -290,50 +296,52 @@ main{
 }
 
 video, .img_c{
-    box-shadow: 1rem 1rem rgb(82, 177, 231);
+    box-shadow: 50px 50px rgb(82, 177, 231);
     max-width: 100%;
     max-height: 100%;
 }
 
 .main_bouton{
-    font-size: 1.7rem;
+    font-size: 1.7em;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(51, 107, 190);
     font-weight: bold;
-    padding: 0.5rem;
+    padding: 0.5em;
+    margin: 1.0em;
     max-width: max-content;
-    border-radius: 2rem;
-    -webkit-border-radius: 2rem;
-    -moz-border-radius: 2rem;
-    -ms-border-radius: 2rem;
-    -o-border-radius: 2rem;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
     object-fit: cover;
     background-color: #0000;
     background-image: linear-gradient(to right,rgb(168, 212, 230) 50%, #0000 50%);
     background-size: 200%;
     background-position: 100%;
-    border: 0.4rem solid rgb(82, 177, 231);
-    box-shadow: 0.5rem 0.5rem #0000001e;
+    border: 15px solid rgb(82, 177, 231);
+    box-shadow: 25px 25px #0000001e;
+    white-space: nowrap;
 }
 
 @keyframes main_bouton_hover {
     from{
         background-position: 100%;
-        padding: 0.5rem;
-        box-shadow: 0.5rem 0.5rem #0000001e;
+        padding: 0.5em;
+        box-shadow: 25px 25px #0000001e;
     }
     to{
         background-position: 0%;
-        padding: 0.55rem;
-        box-shadow: 0.2rem 0.2rem #0000001e;
+        padding: 0.55em;
+        box-shadow: 10px 10px #0000001e;
     }
 }
 
 .main_bouton:hover{
     cursor: pointer;
     background-position: 0%;
-    padding: 0.55rem;
-    box-shadow: 0.2rem 0.2rem #0000001e;
+    padding: 0.55em;
+    box-shadow: 10px 10px #0000001e;
     animation: main_bouton_hover 0.5s ease-out 0s 1;
     -webkit-animation: main_bouton_hover 0.5s ease-out 0s 1;
 }
@@ -341,15 +349,15 @@ video, .img_c{
 @media only screen and (orientation:landscape){
     .contenu_média{
         width: 50%; 
-        max-width: 35rem;
+        max-width: 35em;
     }
 }
 
 @media only screen and (orientation:portrait){
     .contenu_média{
         width: 100%; 
-        max-width: 35rem;
-        margin: 1rem;
+        max-width: 35em;
+        margin: 1em;
     }
 }
 
@@ -364,8 +372,8 @@ video, .img_c{
 
 p, li{
     text-align: justify; 
-    margin: 1rem; 
-    font-size: 1.25rem;
+    margin: 1em; 
+    font-size: 1.25em;
 }
 
 table{
@@ -373,16 +381,31 @@ table{
     margin: 0;
     border-collapse: collapse;
     width: 75%;
-    box-shadow: 1rem 1rem #4583c971;
+    box-shadow: 1em 1em #4583c971;
 }
 
 td{
-    padding: 1rem;
+    padding: 1em;
     border: 1px solid rgb(82, 177, 231);
     margin: 0;
-    text-align: center;
     background-color: #0000;
     font-weight: bold;
+}
+
+td div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+td div div{
+    width: 5em;
+}
+
+td div p{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
 }
 
 td:hover{
@@ -390,32 +413,33 @@ td:hover{
 }
 
 .icône{
-    width: 2rem;
+    width: 2em;
 }
 
 .icône img{
     vertical-align: bottom;
-    border-radius: 0.5rem;
-    -webkit-border-radius: 0.5rem;
-    -moz-border-radius: 0.5rem;
-    -ms-border-radius: 0.5rem;
-    -o-border-radius: 0.5rem;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
 }
 
 .bloc_fermable_bouton{
-    margin-left: 5rem;
-    font-size: 2rem;
+    margin: 1em;
+    font-size: 2em;
     font-weight: bold;
-    width:  3.5rem;
-    height: 3.5rem;
+    min-width: 2.5em;
+    width: 2.5em;
+    height: 2.5em;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    border: 0.5rem solid rgb(82, 177, 231);
+    border-radius: 0.6em;
+    -webkit-border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    -ms-border-radius: 0.6em;
+    -o-border-radius: 0.6em;
+    border: 0.4em solid rgb(82, 177, 231);
     color:rgb(51, 107, 190);
     background-color: #0000;
 }
@@ -423,4 +447,20 @@ td:hover{
 .bloc_fermable_bouton:hover{
     cursor: pointer;
     background-color: rgb(168, 212, 230);
+}
+
+input, textarea{
+    margin:0.25em;
+    font-size: 1.5em;
+    max-width:100%;
+    max-height:100%;
+    min-width: 0;
+    padding: 0.5em;
+    min-height: 1em;
+    border-width: 0;
+    border-radius: 15px;
+}
+
+textarea{
+    resize: none;
 }
