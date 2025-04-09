@@ -34,15 +34,15 @@ footer{
 
 @keyframes header_bouton_hover{
     from {
-        box-shadow: 0em 0em rgb(82, 177, 231);
+        box-shadow:0em 0em rgb(82, 177, 231);
     }
     to {
-        box-shadow: 0em 0.5em rgb(82, 177, 231);
+        box-shadow:0em 0.5em rgb(82, 177, 231);
     }
 }
 
 .header_bouton:hover{
-    box-shadow: 0em 0.5em rgb(82, 177, 231);
+    box-shadow:0em 0.5em rgb(82, 177, 231);
     animation: header_bouton_hover 0.5s ease-out 0s 1;
     -webkit-animation: header_bouton_hover 0.5s ease-out 0s 1;
 }
@@ -84,11 +84,11 @@ main{
 
 .bloc_cadre{
     border-color: #0001;
-    box-shadow: 1em 1em 10em #FFF1;
+    box-shadow:1em 1em 10em #FFF1;
 }
 
 video, .img_c{
-    box-shadow: 1em 1em rgb(51, 107, 190);
+    box-shadow:1em 1em rgb(51, 107, 190);
 }
 
 .main_bouton{
@@ -117,7 +117,7 @@ video, .img_c{
 }
 
 table{
-    box-shadow: 1em 1em #4583c971;
+    box-shadow:1em 1em #4583c971;
 }
 
 td{
@@ -130,10 +130,10 @@ td:hover{
 }
 
 footer a, footer p{
-    margin: 1em;
+    margin:1em;
     color: white;
     text-decoration: none;
-    font-size: 1em;
+    font-size:1em;
 }
 
 footer a:hover{

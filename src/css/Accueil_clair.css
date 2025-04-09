@@ -21,15 +21,15 @@
     max-width: 80%;
     border-radius: 0;
 
-    box-shadow: 2em 2em rgb(82, 177, 231);
-    top: 2em;
+    box-shadow:2em 2em rgb(82, 177, 231);
+    top:2em;
 }
 
 @keyframes bouton_programme_hover {
     from{
         background-position: 100%;
-        box-shadow: 2em 2em rgb(82, 177, 231);
-        top: 2em;
+        box-shadow:2em 2em rgb(82, 177, 231);
+        top:2em;
         width: 35em;
         max-width: 80%;
         border-radius: 0;
@@ -45,11 +45,11 @@
         top: -1em;
         width: 37em;
         max-width: 85%;
-        border-radius: 5em;
-        -webkit-border-radius: 5em;
-        -moz-border-radius: 5em;
-        -ms-border-radius: 5em;
-        -o-border-radius: 5em;
+        border-radius:5em;
+        -webkit-border-radius:5em;
+        -moz-border-radius:5em;
+        -ms-border-radius:5em;
+        -o-border-radius:5em;
 }
 }
 
@@ -59,13 +59,13 @@
     top: -1em;
     width: 37em;
     max-width: 85%;
-    border-radius: 5em;
+    border-radius:5em;
     animation: bouton_programme_hover 0.5s ease-out 0s 1;
     -webkit-animation: bouton_programme_hover 0.5s ease-out 0s 1;
-    -webkit-border-radius: 5em;
-    -moz-border-radius: 5em;
-    -ms-border-radius: 5em;
-    -o-border-radius: 5em;
+    -webkit-border-radius:5em;
+    -moz-border-radius:5em;
+    -ms-border-radius:5em;
+    -o-border-radius:5em;
 }
 
 .bouton_programme_image{
@@ -82,21 +82,21 @@
     }
 
     to {
-        border-radius: 5em;
-        -webkit-border-radius: 5em;
-        -moz-border-radius: 5em;
-        -ms-border-radius: 5em;
-        -o-border-radius: 5em;
+        border-radius:5em;
+        -webkit-border-radius:5em;
+        -moz-border-radius:5em;
+        -ms-border-radius:5em;
+        -o-border-radius:5em;
 }
 }
 
 .bouton_programme_image:hover{
-    border-radius: 5em;
+    border-radius:5em;
     animation: bouton_programme_image_hover 0.5s ease-out 0s 1;
-    -webkit-border-radius: 5em;
-    -moz-border-radius: 5em;
-    -ms-border-radius: 5em;
-    -o-border-radius: 5em;
+    -webkit-border-radius:5em;
+    -moz-border-radius:5em;
+    -ms-border-radius:5em;
+    -o-border-radius:5em;
 }
 
 .section_diplômés{
@@ -108,19 +108,19 @@
 .fiche_diplômé{
     display: flex;
     flex-direction: column;
-    margin: 1em;
-    padding: 1em;
+    margin:1em;
+    padding:1em;
     width: 25em;
     min-width: 25em;
     justify-content: center;
     align-items: center;
     border: 2px solid #0001;
     box-shadow: 0 0 1em #0003;
-    border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em;
+    border-radius:1em;
+    -webkit-border-radius:1em;
+    -moz-border-radius:1em;
+    -ms-border-radius:1em;
+    -o-border-radius:1em;
     scroll-snap-type: y mandatory;
 }
 
@@ -137,12 +137,12 @@
     width: 100%;
     height: 20em;
     border:     1px solid #0003;
-    border-radius: 1em;
+    border-radius:1em;
     box-shadow: 0 0 1em #0002 inset;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em;
+    -webkit-border-radius:1em;
+    -moz-border-radius:1em;
+    -ms-border-radius:1em;
+    -o-border-radius:1em;
 }
 
 .uqat{
@@ -150,5 +150,5 @@
 }
 
 .section_diplômés p{
-    font-size: 1em;
+    font-size:1em;
 }

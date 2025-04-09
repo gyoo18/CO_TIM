@@ -25,15 +25,15 @@ html{
     max-width: 80%;
     border-radius: 0;
 
-    box-shadow: 2em 2em rgb(51,107,190);
-    top: 2em;
+    box-shadow:2em 2em rgb(51,107,190);
+    top:2em;
 }
 
 @keyframes bouton_programme_hover {
     from{
         background-position: 100%;
-        box-shadow: 2em 2em rgb(51,107,190);
-        top: 2em;
+        box-shadow:2em 2em rgb(51,107,190);
+        top:2em;
         width: 35em;
         border-radius: 0;
     }
@@ -42,11 +42,11 @@ html{
         box-shadow: 0.5em 0.5em rgb(51,107,190);
         top: 0;
         width: 37em;
-        border-radius: 5em;
-        -webkit-border-radius: 5em;
-        -moz-border-radius: 5em;
-        -ms-border-radius: 5em;
-        -o-border-radius: 5em;
+        border-radius:5em;
+        -webkit-border-radius:5em;
+        -moz-border-radius:5em;
+        -ms-border-radius:5em;
+        -o-border-radius:5em;
 }
 }
 
@@ -55,13 +55,13 @@ html{
     box-shadow: 0.5em 0.5em rgb(51,107,190);
     top: 0;
     width: 37em;
-    border-radius: 5em;
+    border-radius:5em;
     animation: bouton_programme_hover 0.5s ease-out 0s 1;
     -webkit-animation: bouton_programme_hover 0.5s ease-out 0s 1;
-    -webkit-border-radius: 5em;
-    -moz-border-radius: 5em;
-    -ms-border-radius: 5em;
-    -o-border-radius: 5em;
+    -webkit-border-radius:5em;
+    -moz-border-radius:5em;
+    -ms-border-radius:5em;
+    -o-border-radius:5em;
 }
 
 .bouton_programme_image{
@@ -78,21 +78,21 @@ html{
     }
 
     to {
-        border-radius: 5em;
-        -webkit-border-radius: 5em;
-        -moz-border-radius: 5em;
-        -ms-border-radius: 5em;
-        -o-border-radius: 5em;
+        border-radius:5em;
+        -webkit-border-radius:5em;
+        -moz-border-radius:5em;
+        -ms-border-radius:5em;
+        -o-border-radius:5em;
 }
 }
 
 .bouton_programme_image:hover{
-    border-radius: 5em;
+    border-radius:5em;
     animation: bouton_programme_image_hover 0.5s ease-out 0s 1;
-    -webkit-border-radius: 5em;
-    -moz-border-radius: 5em;
-    -ms-border-radius: 5em;
-    -o-border-radius: 5em;
+    -webkit-border-radius:5em;
+    -moz-border-radius:5em;
+    -ms-border-radius:5em;
+    -o-border-radius:5em;
 }
 
 .section_diplômés{
@@ -104,19 +104,19 @@ html{
 .fiche_diplômé{
     display: flex;
     flex-direction: column;
-    margin: 1em;
-    padding: 1em;
+    margin:1em;
+    padding:1em;
     width: 25em;
     min-width: 25em;
     justify-content: center;
     align-items: center;
     border: 2px solid #0001;
-    border-radius: 1em;
+    border-radius:1em;
     box-shadow: 0 0 1em rgba(79, 111, 146, 0.247);
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em;
+    -webkit-border-radius:1em;
+    -moz-border-radius:1em;
+    -ms-border-radius:1em;
+    -o-border-radius:1em;
 }
 
 .fiche_diplômé div{
@@ -133,16 +133,16 @@ html{
     height: 20em;
     border:     1px solid #0003;
     background-color: #FFF1;
-    border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em;
+    border-radius:1em;
+    -webkit-border-radius:1em;
+    -moz-border-radius:1em;
+    -ms-border-radius:1em;
+    -o-border-radius:1em;
 }
 
 
 .section_diplômés p{
-    font-size: 1em;
+    font-size:1em;
 }
 
 .uqat{
@@ -151,6 +151,6 @@ html{
 
 td div div{
     background-color: rgba(231, 250, 255, 0.533);
-    border-radius: 4em;
+    border-radius:4em;
     padding: 5px
 }

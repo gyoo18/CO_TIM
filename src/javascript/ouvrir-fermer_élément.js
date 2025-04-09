@@ -11,7 +11,7 @@ function getElementByClassName(root, name){
 
 function fermer_élément(bouton){
     if (!(bouton in éléments.keys())){
-        éléments.push({e:false});
+        éléments.push({e:true});
     }
 
     if (éléments[bouton]){
