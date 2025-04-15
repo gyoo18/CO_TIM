@@ -28,7 +28,7 @@ function changer_theme(){
         var temps = date.getTime();
         var tempsExpiration = temps + 48*36000;
         date.setTime(tempsExpiration);
-        document.cookie = "theme=sombre; expires"+date.toUTCString()+";";
+        document.cookie = "theme=sombre; expires "+date.toUTCString()+";";
     }else{
         theme_couleur = "clair";
 
@@ -36,7 +36,7 @@ function changer_theme(){
         var temps = date.getTime();
         var tempsExpiration = temps + 48*36000;
         date.setTime(tempsExpiration);
-        document.cookie = "theme=clair; expires"+date.toUTCString()+";";
+        document.cookie = "theme=clair; expires "+date.toUTCString()+";";
     }
 }
 

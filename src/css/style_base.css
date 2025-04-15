@@ -116,7 +116,7 @@ header.grand{
 
 @keyframes header_bouton_hover{
     from {
-        box-shadow:0em0em rgb(82, 177, 231);
+        box-shadow:0em 0em rgb(82, 177, 231);
     }
     to {
         box-shadow:0em 0.5em rgb(82, 177, 231);
@@ -177,7 +177,7 @@ header.grand{
 .bouton_haut{
     z-index: 960;
     position: fixed;
-    bottom:5em;
+    bottom:3em;
     right:5em;
     width: 2.5em;
     height: 2.5em;
@@ -195,6 +195,173 @@ header.grand{
 .bouton_haut:hover{
     cursor: pointer;
     background-color: rgb(51, 107, 190);
+}
+
+.chatbot_icône{
+    position: fixed;
+    bottom: 11em;
+    right: 6.5em;
+    width: 5em;
+    height: 5em;
+    z-index: 960;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.chatbot_icône.petit{
+    width: 2em;
+    height: 2em;
+}
+
+.chatbot_icône.grand{
+    width: 5em;
+    height: 5em;
+}
+
+.chatbot_icône.petit:hover{
+    bottom: 11.2em;
+    width: 2.2em;
+    height: 2.2em;
+}
+
+.chatbot_icône.grand:hover{
+    bottom: 12em;
+    width: 5.5em;
+    height: 5.5em;
+}
+
+.chat{
+    z-index: 955;
+    position: fixed;
+    bottom: 11.5em;
+    right: 7em;
+    padding: 1em;
+    flex-direction: column-reverse;
+    background-color: white;
+    border-width: 0;
+    border-radius: 2em;
+    overflow: hidden;
+    box-shadow: 0 0 5em #0005;
+}
+
+@keyframes chat_ouvrir {
+    from{
+        display: flex;
+        width: 0;
+        height: 0;
+    }
+
+    to{
+        display: flex;
+        width: 20em;
+        height: 30em;
+    }
+}
+
+.chat.petit{
+    display: none;
+    width:0;
+    height: 0;
+}
+
+.chat.grand{
+    display: flex;
+    width: 20em;
+    height: 30em;
+    animation: chat_ouvrir 0.1s linear 0s 1;
+}
+
+textarea.chat_message{
+    font-size: 1.2em;
+    padding-right: 3.5em;
+    height: 2.5em;
+    min-height: 2.5em;
+    max-height: 2.5em;
+}
+
+.chat_conversation{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.1s;
+}
+
+.chat_ligne{
+    width:100%;
+    display: flex;
+    margin-bottom: 0.7em;
+}
+
+.chat_ligne.gauche{
+    flex-direction: row;
+}
+
+.chat_ligne.droite{
+    flex-direction: row-reverse;
+}
+
+.chat_bulle{
+    max-width: 50%;
+    padding: 1em;
+    border-width: 0;
+    border-radius: 2em;
+    font-size: 0.9em;
+}
+
+.chat_bulle.bot{
+    background-color: #0002;
+}
+
+.chat_bulle.utilisateur{
+    background-color: rgba(0, 132, 255, 0.397);
+}
+
+.chat_x{
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+    color: #0008
+}
+
+.chat_x:hover{
+    color:#000F;
+}
+
+.chat_envoyer{
+    display: flex;
+    font-size: 2em;
+    position: absolute;
+    bottom: 0.73em;
+    right: 0.9em;
+    font-weight: 1000;
+    background-color: #0000;
+    color: #ee8229;
+    cursor: pointer;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat_envoyer:hover{
+    background-color: #ee822959;
+}
+
+.chat_avis{
+    font-size: small;
+    position: absolute;
+    bottom: -0.75em;
+    text-align: center;
+    width: 22em;
+    color: #0008
 }
 
 @media only screen and (orientation:landscape) {

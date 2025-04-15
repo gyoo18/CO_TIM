@@ -48,6 +48,41 @@ footer{
     background-color: rgb(51, 107, 190);
 }
 
+.chat{
+    background-color: #FFFF;
+    border: 0px solid rgb(27, 27, 27);
+    box-shadow: 0 0 5em #0003;
+}
+
+.chat_bulle.bot{
+    background-color: #0002;
+    color: #000;
+}
+
+.chat_bulle.utilisateur{
+    background-color: rgba(0, 132, 255, 0.5);
+    color: #000
+}
+
+textarea.chat_message{
+    box-shadow: 0 0 2em #0002;
+    border: 2px solid #0003;
+}
+
+.chat_avis{
+    color: #0005;
+}
+
+.chat_x{
+    background-color: #0002;
+    color: #0005;
+}
+
+.chat_x:hover{
+    background-color: #0005;
+    color: #000A;
+}
+
 .menu_cadre{
     background-color: rgb(255, 255, 255); 
     border-color: #afafaf; 

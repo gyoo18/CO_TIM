@@ -65,6 +65,36 @@ footer{
     background-color: rgb(82, 177, 231);
 }
 
+.chat{
+    background-color: rgb(39, 39, 39);
+    border: 2px solid rgb(27, 27, 27);
+    box-shadow: 0 0 5em #0008;
+}
+
+.chat_bulle.bot{
+    background-color: #FFF2;
+    color: #FFF
+}
+
+.chat_bulle.utilisateur{
+    background-color: rgba(0, 132, 255, 0.5);
+    color: #FFF
+}
+
+.chat_avis{
+    color: #FFF5;
+}
+
+.chat_x{
+    background-color: #FFF2;
+    color: #FFF5;
+}
+
+.chat_x:hover{
+    background-color: #FFF5;
+    color: #FFFA;
+}
+
 main{
     background-color: rgb(39, 39, 39);
 }

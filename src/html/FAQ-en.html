@@ -9,7 +9,7 @@
         <script src="../javascript/changement_theme.js"></script>
         <script src="../javascript/ouvrir-fermer_élément.js"></script>
         <script src="../javascript/header_scroll.js"></script>
-
+        <script src="../javascript/chatbot.js"></script>
         <style>
             .bloc_titre{
                 display: flex;
@@ -37,6 +37,20 @@
         <button class="bouton_haut" onclick="window.location.href='#1'">
             ▲
         </button>
+
+        <div class="chatbot_icône grand">
+            <img src="../../res/icônes/chatbot_sombre.png">
+        </div>
+
+        <div id="chat_réel" class="chat petit">
+            <p class="chat_avis">Propulsé par Mistral ai</p>
+            <textarea class="chat_message" placeholder="Poser une question"></textarea>
+            <button class="chat_envoyer">></button>
+            <button class="chat_x">x</button>
+            <div class="chat_conversation">
+                
+            </div>
+        </div>
 
         <!-- Corp -->
         <div class="corp">
